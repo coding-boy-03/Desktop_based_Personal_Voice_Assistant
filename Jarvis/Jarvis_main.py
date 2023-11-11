@@ -15,9 +15,6 @@ import pwinput
 
 
 
-# Now, 'password' contains the entered password without displaying it on the screen
-
-
 for i in range(3):
     a = pwinput.pwinput(prompt="Enter Password to open Jarvis: ", mask='*')
     pw_file = open("password.txt","r")
@@ -34,7 +31,8 @@ for i in range(3):
 
 from INTRO import play_gif
 play_gif
-#paste this just below the password function
+
+
 
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty("voices")
